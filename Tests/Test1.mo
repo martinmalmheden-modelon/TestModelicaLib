@@ -1,7 +1,6 @@
 within TestModelicaLib.Tests;
 model Test1
     .TestModelicaLib.Components.Spring spring(c = 10) annotation(Placement(transformation(extent = {{-57.4906832298137,63.61180124223603},{-37.4906832298137,83.61180124223603}},origin = {0,0},rotation = 0)));
-    .TestModelicaLib.Components.Inertia inertia(J = 5) annotation(Placement(transformation(extent = {{-22.6459627329193,63.78260869565216},{-2.6459627329193154,83.78260869565216}},origin = {0,0},rotation = 0)));
     .TestModelicaLib.Components.Fixed fixed annotation(Placement(transformation(extent = {{-104.28571428571429,32.53105590062112},{-84.28571428571429,52.53105590062112}},origin = {0,0},rotation = 0)));
 equation
     connect(spring.flange_b,inertia.flange_a) annotation(Line(points = {{-37.4906832298137,73.61180124223603},{-28.872670807453453,73.61180124223603},{-28.872670807453453,73.78260869565216},{-22.6459627329193,73.78260869565216}},color = {0,0,0}));
